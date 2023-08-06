@@ -1,0 +1,675 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4010A2792A62EEE900ACF999 /* SujataTuitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010A2782A62EEE900ACF999 /* SujataTuitionApp.swift */; };
+		4010A27B2A62EEE900ACF999 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010A27A2A62EEE900ACF999 /* ContentView.swift */; };
+		4010A27D2A62EEEA00ACF999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4010A27C2A62EEEA00ACF999 /* Assets.xcassets */; };
+		4010A2802A62EEEA00ACF999 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4010A27F2A62EEEA00ACF999 /* Preview Assets.xcassets */; };
+		4010A2822A62EEEA00ACF999 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010A2812A62EEEA00ACF999 /* Persistence.swift */; };
+		4010A28F2A62EEEA00ACF999 /* SujataTuitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010A28E2A62EEEA00ACF999 /* SujataTuitionTests.swift */; };
+		4010A2992A62EEEA00ACF999 /* SujataTuitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010A2982A62EEEA00ACF999 /* SujataTuitionUITests.swift */; };
+		4010A29B2A62EEEA00ACF999 /* SujataTuitionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010A29A2A62EEEA00ACF999 /* SujataTuitionUITestsLaunchTests.swift */; };
+		4010A2AA2A62F49400ACF999 /* StudenttestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4010A2A82A62F49400ACF999 /* StudenttestModel.xcdatamodeld */; };
+		4010A2AC2A62FCE400ACF999 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010A2AB2A62FCE400ACF999 /* SessionController.swift */; };
+		4010A2AE2A62FCFC00ACF999 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4010A2AD2A62FCFC00ACF999 /* StudentController.swift */; };
+		4061AC422A7BD23700FE0CE8 /* MyLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061AC412A7BD23700FE0CE8 /* MyLeftView.swift */; };
+		4061AC442A7BD25100FE0CE8 /* MyRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4061AC432A7BD25100FE0CE8 /* MyRightView.swift */; };
+		4082B9912A79388200E6010D /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4082B9902A79388200E6010D /* SUImagePickerView.swift */; };
+		4082B9952A793DFE00E6010D /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4082B9932A793DFE00E6010D /* CheckoutViewController.swift */; };
+		4086D6FA2A7D2B2100DE7545 /* Students+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086D6F92A7D2B2100DE7545 /* Students+CoreDataProperties.swift */; };
+		4086D7002A7D409A00DE7545 /* Sessions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086D6FF2A7D409A00DE7545 /* Sessions+CoreDataProperties.swift */; };
+		4086D7022A7D44F500DE7545 /* Students+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086D7012A7D44F500DE7545 /* Students+CoreDataClass.swift */; };
+		4086D7042A7D454800DE7545 /* Sessions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4086D7032A7D454800DE7545 /* Sessions+CoreDataClass.swift */; };
+		408C22482A7E7B0B0007D320 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C22472A7E7B0B0007D320 /* EmailController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4010A28B2A62EEEA00ACF999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4010A26D2A62EEE900ACF999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4010A2742A62EEE900ACF999;
+			remoteInfo = SujataTuition;
+		};
+		4010A2952A62EEEA00ACF999 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4010A26D2A62EEE900ACF999 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4010A2742A62EEE900ACF999;
+			remoteInfo = SujataTuition;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4010A2752A62EEE900ACF999 /* SujataTuition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SujataTuition.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4010A2782A62EEE900ACF999 /* SujataTuitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionApp.swift; sourceTree = "<group>"; };
+		4010A27A2A62EEE900ACF999 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4010A27C2A62EEEA00ACF999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4010A27F2A62EEEA00ACF999 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4010A2812A62EEEA00ACF999 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4010A28A2A62EEEA00ACF999 /* SujataTuitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SujataTuitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4010A28E2A62EEEA00ACF999 /* SujataTuitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionTests.swift; sourceTree = "<group>"; };
+		4010A2942A62EEEA00ACF999 /* SujataTuitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SujataTuitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4010A2982A62EEEA00ACF999 /* SujataTuitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionUITests.swift; sourceTree = "<group>"; };
+		4010A29A2A62EEEA00ACF999 /* SujataTuitionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4010A2A92A62F49400ACF999 /* StudentModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StudentModel.xcdatamodel; sourceTree = "<group>"; };
+		4010A2AB2A62FCE400ACF999 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
+		4010A2AD2A62FCFC00ACF999 /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
+		4061AC412A7BD23700FE0CE8 /* MyLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeftView.swift; sourceTree = "<group>"; };
+		4061AC432A7BD25100FE0CE8 /* MyRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRightView.swift; sourceTree = "<group>"; };
+		4082B9902A79388200E6010D /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
+		4082B9932A793DFE00E6010D /* CheckoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
+		4086D6F92A7D2B2100DE7545 /* Students+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4086D6FF2A7D409A00DE7545 /* Sessions+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sessions+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4086D7012A7D44F500DE7545 /* Students+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataClass.swift"; sourceTree = "<group>"; };
+		4086D7032A7D454800DE7545 /* Sessions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sessions+CoreDataClass.swift"; sourceTree = "<group>"; };
+		408C22472A7E7B0B0007D320 /* EmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
+		40B9BBFE2A7A904B0012B399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4010A2722A62EEE900ACF999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4010A2872A62EEEA00ACF999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4010A2912A62EEEA00ACF999 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4010A26C2A62EEE900ACF999 = {
+			isa = PBXGroup;
+			children = (
+				4010A2772A62EEE900ACF999 /* SujataTuition */,
+				4010A28D2A62EEEA00ACF999 /* SujataTuitionTests */,
+				4010A2972A62EEEA00ACF999 /* SujataTuitionUITests */,
+				4010A2762A62EEE900ACF999 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4010A2762A62EEE900ACF999 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4010A2752A62EEE900ACF999 /* SujataTuition.app */,
+				4010A28A2A62EEEA00ACF999 /* SujataTuitionTests.xctest */,
+				4010A2942A62EEEA00ACF999 /* SujataTuitionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4010A2772A62EEE900ACF999 /* SujataTuition */ = {
+			isa = PBXGroup;
+			children = (
+				40B9BBFE2A7A904B0012B399 /* Info.plist */,
+				4082B9892A78CB2000E6010D /* New Group */,
+				4010A2782A62EEE900ACF999 /* SujataTuitionApp.swift */,
+				408C22472A7E7B0B0007D320 /* EmailController.swift */,
+				4010A27A2A62EEE900ACF999 /* ContentView.swift */,
+				4061AC412A7BD23700FE0CE8 /* MyLeftView.swift */,
+				4061AC432A7BD25100FE0CE8 /* MyRightView.swift */,
+				4010A27C2A62EEEA00ACF999 /* Assets.xcassets */,
+				4010A2812A62EEEA00ACF999 /* Persistence.swift */,
+				4010A2A72A62F24500ACF999 /* DataModel */,
+				4010A27E2A62EEEA00ACF999 /* Preview Content */,
+			);
+			path = SujataTuition;
+			sourceTree = "<group>";
+		};
+		4010A27E2A62EEEA00ACF999 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4010A27F2A62EEEA00ACF999 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4010A28D2A62EEEA00ACF999 /* SujataTuitionTests */ = {
+			isa = PBXGroup;
+			children = (
+				4010A28E2A62EEEA00ACF999 /* SujataTuitionTests.swift */,
+			);
+			path = SujataTuitionTests;
+			sourceTree = "<group>";
+		};
+		4010A2972A62EEEA00ACF999 /* SujataTuitionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4010A2982A62EEEA00ACF999 /* SujataTuitionUITests.swift */,
+				4010A29A2A62EEEA00ACF999 /* SujataTuitionUITestsLaunchTests.swift */,
+			);
+			path = SujataTuitionUITests;
+			sourceTree = "<group>";
+		};
+		4010A2A72A62F24500ACF999 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4010A2A82A62F49400ACF999 /* StudenttestModel.xcdatamodeld */,
+				4086D7012A7D44F500DE7545 /* Students+CoreDataClass.swift */,
+				4086D6F92A7D2B2100DE7545 /* Students+CoreDataProperties.swift */,
+				4086D7032A7D454800DE7545 /* Sessions+CoreDataClass.swift */,
+				4086D6FF2A7D409A00DE7545 /* Sessions+CoreDataProperties.swift */,
+				4010A2AB2A62FCE400ACF999 /* SessionController.swift */,
+				4010A2AD2A62FCFC00ACF999 /* StudentController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		4082B9892A78CB2000E6010D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				4082B9932A793DFE00E6010D /* CheckoutViewController.swift */,
+				4082B9902A79388200E6010D /* SUImagePickerView.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4010A2742A62EEE900ACF999 /* SujataTuition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4010A29E2A62EEEA00ACF999 /* Build configuration list for PBXNativeTarget "SujataTuition" */;
+			buildPhases = (
+				4010A2712A62EEE900ACF999 /* Sources */,
+				4010A2722A62EEE900ACF999 /* Frameworks */,
+				4010A2732A62EEE900ACF999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SujataTuition;
+			productName = SujataTuition;
+			productReference = 4010A2752A62EEE900ACF999 /* SujataTuition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4010A2892A62EEEA00ACF999 /* SujataTuitionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4010A2A12A62EEEA00ACF999 /* Build configuration list for PBXNativeTarget "SujataTuitionTests" */;
+			buildPhases = (
+				4010A2862A62EEEA00ACF999 /* Sources */,
+				4010A2872A62EEEA00ACF999 /* Frameworks */,
+				4010A2882A62EEEA00ACF999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4010A28C2A62EEEA00ACF999 /* PBXTargetDependency */,
+			);
+			name = SujataTuitionTests;
+			productName = SujataTuitionTests;
+			productReference = 4010A28A2A62EEEA00ACF999 /* SujataTuitionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4010A2932A62EEEA00ACF999 /* SujataTuitionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4010A2A42A62EEEA00ACF999 /* Build configuration list for PBXNativeTarget "SujataTuitionUITests" */;
+			buildPhases = (
+				4010A2902A62EEEA00ACF999 /* Sources */,
+				4010A2912A62EEEA00ACF999 /* Frameworks */,
+				4010A2922A62EEEA00ACF999 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4010A2962A62EEEA00ACF999 /* PBXTargetDependency */,
+			);
+			name = SujataTuitionUITests;
+			productName = SujataTuitionUITests;
+			productReference = 4010A2942A62EEEA00ACF999 /* SujataTuitionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4010A26D2A62EEE900ACF999 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4010A2742A62EEE900ACF999 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4010A2892A62EEEA00ACF999 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4010A2742A62EEE900ACF999;
+					};
+					4010A2932A62EEEA00ACF999 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4010A2742A62EEE900ACF999;
+					};
+				};
+			};
+			buildConfigurationList = 4010A2702A62EEE900ACF999 /* Build configuration list for PBXProject "SujataTuition" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4010A26C2A62EEE900ACF999;
+			productRefGroup = 4010A2762A62EEE900ACF999 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4010A2742A62EEE900ACF999 /* SujataTuition */,
+				4010A2892A62EEEA00ACF999 /* SujataTuitionTests */,
+				4010A2932A62EEEA00ACF999 /* SujataTuitionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4010A2732A62EEE900ACF999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4010A2802A62EEEA00ACF999 /* Preview Assets.xcassets in Resources */,
+				4010A27D2A62EEEA00ACF999 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4010A2882A62EEEA00ACF999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4010A2922A62EEEA00ACF999 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4010A2712A62EEE900ACF999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4010A2822A62EEEA00ACF999 /* Persistence.swift in Sources */,
+				4010A2AE2A62FCFC00ACF999 /* StudentController.swift in Sources */,
+				4010A2AA2A62F49400ACF999 /* StudenttestModel.xcdatamodeld in Sources */,
+				4086D6FA2A7D2B2100DE7545 /* Students+CoreDataProperties.swift in Sources */,
+				4082B9912A79388200E6010D /* SUImagePickerView.swift in Sources */,
+				408C22482A7E7B0B0007D320 /* EmailController.swift in Sources */,
+				4010A27B2A62EEE900ACF999 /* ContentView.swift in Sources */,
+				4061AC422A7BD23700FE0CE8 /* MyLeftView.swift in Sources */,
+				4086D7022A7D44F500DE7545 /* Students+CoreDataClass.swift in Sources */,
+				4010A2792A62EEE900ACF999 /* SujataTuitionApp.swift in Sources */,
+				4086D7002A7D409A00DE7545 /* Sessions+CoreDataProperties.swift in Sources */,
+				4086D7042A7D454800DE7545 /* Sessions+CoreDataClass.swift in Sources */,
+				4082B9952A793DFE00E6010D /* CheckoutViewController.swift in Sources */,
+				4010A2AC2A62FCE400ACF999 /* SessionController.swift in Sources */,
+				4061AC442A7BD25100FE0CE8 /* MyRightView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4010A2862A62EEEA00ACF999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4010A28F2A62EEEA00ACF999 /* SujataTuitionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4010A2902A62EEEA00ACF999 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4010A2992A62EEEA00ACF999 /* SujataTuitionUITests.swift in Sources */,
+				4010A29B2A62EEEA00ACF999 /* SujataTuitionUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4010A28C2A62EEEA00ACF999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4010A2742A62EEE900ACF999 /* SujataTuition */;
+			targetProxy = 4010A28B2A62EEEA00ACF999 /* PBXContainerItemProxy */;
+		};
+		4010A2962A62EEEA00ACF999 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4010A2742A62EEE900ACF999 /* SujataTuition */;
+			targetProxy = 4010A2952A62EEEA00ACF999 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4010A29C2A62EEEA00ACF999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4010A29D2A62EEEA00ACF999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4010A29F2A62EEEA00ACF999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SujataTuition/Preview Content\"";
+				DEVELOPMENT_TEAM = 2MMNFG749N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SujataTuition/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(EXECUTABLE_NAME)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sujata.SujataTuition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4010A2A02A62EEEA00ACF999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SujataTuition/Preview Content\"";
+				DEVELOPMENT_TEAM = 2MMNFG749N;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SujataTuition/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(EXECUTABLE_NAME)";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sujata.SujataTuition;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4010A2A22A62EEEA00ACF999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MMNFG749N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sujata.SujataTuitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SujataTuition.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SujataTuition";
+			};
+			name = Debug;
+		};
+		4010A2A32A62EEEA00ACF999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MMNFG749N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sujata.SujataTuitionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SujataTuition.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SujataTuition";
+			};
+			name = Release;
+		};
+		4010A2A52A62EEEA00ACF999 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MMNFG749N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sujata.SujataTuitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SujataTuition;
+			};
+			name = Debug;
+		};
+		4010A2A62A62EEEA00ACF999 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MMNFG749N;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sujata.SujataTuitionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SujataTuition;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4010A2702A62EEE900ACF999 /* Build configuration list for PBXProject "SujataTuition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4010A29C2A62EEEA00ACF999 /* Debug */,
+				4010A29D2A62EEEA00ACF999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4010A29E2A62EEEA00ACF999 /* Build configuration list for PBXNativeTarget "SujataTuition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4010A29F2A62EEEA00ACF999 /* Debug */,
+				4010A2A02A62EEEA00ACF999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4010A2A12A62EEEA00ACF999 /* Build configuration list for PBXNativeTarget "SujataTuitionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4010A2A22A62EEEA00ACF999 /* Debug */,
+				4010A2A32A62EEEA00ACF999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4010A2A42A62EEEA00ACF999 /* Build configuration list for PBXNativeTarget "SujataTuitionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4010A2A52A62EEEA00ACF999 /* Debug */,
+				4010A2A62A62EEEA00ACF999 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4010A2A82A62F49400ACF999 /* StudenttestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4010A2A92A62F49400ACF999 /* StudentModel.xcdatamodel */,
+			);
+			currentVersion = 4010A2A92A62F49400ACF999 /* StudentModel.xcdatamodel */;
+			path = StudenttestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4010A26D2A62EEE900ACF999 /* Project object */;
+}
