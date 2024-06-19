@@ -1,0 +1,112 @@
+{
+  "identifier" : "D466DEF6",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "350",
+      "familyShareable" : false,
+      "internalID" : "FDA26762",
+      "localizations" : [
+        {
+          "description" : "6th Maths",
+          "displayName" : "6th Maths",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.temporary.6Maths",
+      "referenceName" : "6Maths",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "350",
+      "familyShareable" : false,
+      "internalID" : "021BDA47",
+      "localizations" : [
+        {
+          "description" : "6th Physics",
+          "displayName" : "6th Physics",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.temporary.6Physics",
+      "referenceName" : "6Physics",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "250",
+      "familyShareable" : false,
+      "internalID" : "7C6C0F1D",
+      "localizations" : [
+        {
+          "description" : "6th Chemistry",
+          "displayName" : "6th Chemistry",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.temporary.6Chemistry",
+      "referenceName" : "6Chemistry",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}
