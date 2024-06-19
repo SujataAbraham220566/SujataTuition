@@ -9,6 +9,6 @@ import Foundation
 import CoreData
 
 @objc(VideoFiles)
-public class VideoFiles: NSManagedObject {
+public class VideoFile: NSManagedObject {
 
 }

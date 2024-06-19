@@ -43,8 +43,6 @@
 		40CA0B892B9370EC00DB5429 /* PwdFile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B882B9370EC00DB5429 /* PwdFile+CoreDataClass.swift */; };
 		40CA0B8B2B93714900DB5429 /* PwdFile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B8A2B93714900DB5429 /* PwdFile+CoreDataProperties.swift */; };
 		40CA0B8D2B9371A200DB5429 /* Sessions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B8C2B9371A200DB5429 /* Sessions+CoreDataProperties.swift */; };
-		40CA0B8F2B93721F00DB5429 /* Students+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B8E2B93721F00DB5429 /* Students+CoreDataProperties.swift */; };
-		40CA0B912B9372BC00DB5429 /* Students+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B902B9372BC00DB5429 /* Students+CoreDataClass.swift */; };
 		40CA0B942B93740400DB5429 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B932B93740400DB5429 /* CheckOutViewController.swift */; };
 		40CA0B962B93745700DB5429 /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B952B93745700DB5429 /* SUImagePickerView.swift */; };
 		40CA0B982B9374B000DB5429 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B972B9374B000DB5429 /* EmailController.swift */; };
@@ -112,8 +110,6 @@
 		40CA0B882B9370EC00DB5429 /* PwdFile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PwdFile+CoreDataClass.swift"; sourceTree = "<group>"; };
 		40CA0B8A2B93714900DB5429 /* PwdFile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PwdFile+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		40CA0B8C2B9371A200DB5429 /* Sessions+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sessions+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		40CA0B8E2B93721F00DB5429 /* Students+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		40CA0B902B9372BC00DB5429 /* Students+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Students+CoreDataClass.swift"; sourceTree = "<group>"; };
 		40CA0B932B93740400DB5429 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
 		40CA0B952B93745700DB5429 /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
 		40CA0B972B9374B000DB5429 /* EmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
@@ -268,8 +264,6 @@
 				40CA0B8A2B93714900DB5429 /* PwdFile+CoreDataProperties.swift */,
 				40CA0B8C2B9371A200DB5429 /* Sessions+CoreDataProperties.swift */,
 				40BF51062C1C944000E29C0B /* VideoFiles+CoreDataProperties.swift */,
-				40CA0B8E2B93721F00DB5429 /* Students+CoreDataProperties.swift */,
-				40CA0B902B9372BC00DB5429 /* Students+CoreDataClass.swift */,
 			);
 			path = DataModelGroup;
 			sourceTree = "<group>";
@@ -419,7 +413,6 @@
 				40CA0B942B93740400DB5429 /* CheckOutViewController.swift in Sources */,
 				40BF50F72C1C7FEA00E29C0B /* VideoController.swift in Sources */,
 				40923DAF2B9E0D5200D55B0D /* UserAuth.swift in Sources */,
-				40CA0B912B9372BC00DB5429 /* Students+CoreDataClass.swift in Sources */,
 				40CA0B732B936CF100DB5429 /* SessionView.swift in Sources */,
 				40CA0B452B93675300DB5429 /* Persistence.swift in Sources */,
 				40CA0B752B936D6200DB5429 /* AddStudentView.swift in Sources */,
@@ -449,7 +442,6 @@
 				402BEF582B9B098600907954 /* ResultViewController.swift in Sources */,
 				404A762F2C238DE1001789D4 /* DataModel.xcdatamodeld in Sources */,
 				40CA0B892B9370EC00DB5429 /* PwdFile+CoreDataClass.swift in Sources */,
-				40CA0B8F2B93721F00DB5429 /* Students+CoreDataProperties.swift in Sources */,
 				405E15A42C19110000F2E840 /* VideoManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

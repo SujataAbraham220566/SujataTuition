@@ -29,99 +29,24 @@ struct MyLeftView: View{
     //let userId: String
     //let email: String
     @StateObject var storeKit: StoreKitManager = StoreKitManager()
-    //@StateObject var videoKit: VideoManager = VideoManager()
-    //let titleright: String
-    //@Binding var needsRefresh: Bool
-    //@Environment(\.dismiss) var dismiss
-    @State private var feedback = ""
-    @State private var password = ""
-    @State private var username = ""
-    @State private var presentView = false
-    @State private var presentStudentView = false
-    @State private var presentSessionView = false
-    @State private var presentTuitionView = false
-    @State private var passwordList: [String] = []
-    @State private var path: [String] = []
-    @State private var pwds: [PwdFile] = [PwdFile]()
-
-    @Environment(\.colorScheme) var colorScheme
-    @State var email: String = ""
-    @State var firstName: String = ""
-    @State var lastName: String = ""
-    @State var userId: String = ""
-    //@AppStorage("firstName") var firstName: String = ""
-    //@AppStorage("lastName") var lastName: String = ""
-    //@AppStorage("userId") var userId: String = ""
     
-    @Binding var needsRefresh: Bool
+    @Environment(\.colorScheme) var colorScheme
     @Environment(\.dismiss) var dismiss
     @Environment(\.scenePhase) private var scenePhase
-    //@State var selectedId: String = ""
-    @State var image: Image? = Image("Sujata")
-    @State private var shouldPresentImagePicker = false
-    @State private var shouldPresentActionScheet = false
-    @State private var shouldPresentCamera = false
-    @State var classChoice = 0
-    @State private var studid = UUID()
-    @State private var passwdarray = []
-    @State private var name = ""
-    @State private var mail = ""
-    @State private var state = ""
-    @State private var passwd = ""
-    //@State private var password = ""
-    @State private var country = ""
-    @State private var pwd = ""
-    enum cLass: String{
-        case std6 = "6th"
-        case std7 = "7th"
-        case std8 = "8th"
+    
+    @State private var videos: [VideoFiles]
+    
+    enum Class: String {
+        case Sixth = "6th"
+        case Seventh = "7th"
+        case Eight = "8th"
     }
-    enum subjects: String{
+    
+    enum Subjects: String {
         case Maths = "Maths"
         case Physics = "Physics"
         case Chemistry = "Chemistry"
         //case Biology = "Biology"
-    }
-    struct subj{
-        var Maths: Bool
-        var Physics: Bool
-        var Chemistry: Bool
-        //var Biology: Bool
-        init(){
-            self.Maths = false
-            self.Physics = false
-            self.Chemistry = false
-            //self.Biology = false
-        }
-    }
-    @State private var somesubj = subj()
-    @State var isChecked = false
-    @State var selectedOption: Int = 1
-    //@State private var asImage = ((image) -> UIImage).self
-    
-    struct CheckboxToggleStyle: ToggleStyle {
-        func makeBody(configuration: Configuration) -> some View {
-            HStack {
-                
-                RoundedRectangle(cornerRadius: 5.0)
-                    .stroke(lineWidth: 2)
-                    .frame(width: 25, height: 25)
-                    .cornerRadius(5.0)
-                    .overlay {
-                        if configuration.isOn {
-                            Image(systemName: "checkmark")
-                        }
-                    }
-                    .onTapGesture {
-                        withAnimation(.spring()) {
-                            configuration.isOn.toggle()
-                        }
-                    }
-                
-                configuration.label
-                
-            }
-        }
     }
     
     var body: some View{
@@ -137,7 +62,7 @@ struct MyLeftView: View{
                         .foregroundColor(Color.red)
                     
                     //Text("  ")
-                    VStack{
+                    VStack {
                         Text("Personalized Online Intensive Coaching Class")
                             .font(.custom("Rubic Doodle shadow", size: 10))
                         //Spacer(minLength: 100)
@@ -183,99 +108,11 @@ struct MyLeftView: View{
                     Spacer(minLength: 30)
                 }
                 Spacer(minLength: 1)
-                HStack{
-                    Text("Classes")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                    RadioButtonView(index: 1, selectedIndex: $selectedOption)
-                    //.font(.title)
-                    RadioButtonView(index: 2, selectedIndex: $selectedOption)
-                    //.font(.title)
-                    RadioButtonView(index: 3, selectedIndex: $selectedOption)
-                    //.font(.title)
-                    //Text("Selected option: \(selectedOption)")
-                }
-                .foregroundColor(.purple)
-                Spacer(minLength: 1)
-                HStack{
-                    Text("Subjects")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                    
-                    Toggle(isOn: $somesubj.Maths) {
-                        Text("Maths")
-                            .foregroundColor(.red)
-                            .font(.headline)
-                    }
-                    .toggleStyle(CheckboxToggleStyle())
-                    .foregroundColor(.green)
-                    
-                    Toggle(isOn: $somesubj.Physics) {
-                        Text("Physics")
-                            .foregroundColor(.red)
-                            .font(.headline)
-                    }
-                    .toggleStyle(CheckboxToggleStyle())
-                    .foregroundColor(.green)
-                    
-                    Toggle(isOn: $somesubj.Chemistry) {
-                        Text("Chemistry")
-                            .foregroundColor(.red)
-                            .font(.headline)
-                    }
-                    .toggleStyle(CheckboxToggleStyle())
-                    .foregroundColor(.green)
-                    /*Toggle(isOn: $somesubj.Biology) {
-                     Text("Biology")
-                     }
-                     .toggleStyle(CheckboxToggleStyle())*/
-                    //Spacer(minLength: 30)
-                }
-                
-                Spacer(minLength: 1)
-                //Spacer(minLength: 1)
-                /*VStack{
-                    //if !userId.isEmpty{
-                    SignInWithAppleButton(.continue){ request in
-                        request.requestedScopes = [.email, .fullName]
-                    }
-                onCompletion: { result in
-                    switch(result){
-                    case .success(let auth):
-                        switch auth.credential{
-                        case let credential as ASAuthorizationAppleIDCredential:
-                            let userId = credential.user
-                            let email = credential.email
-                            //let email = tempemail!.replacingOccurrences(of: " ", with: "")
-                            let firstName = credential.fullName?.givenName
-                            let lastName = credential.fullName?.familyName
-                            //userAuth.email = email!
-                            self.email = email ?? ""
-                            self.userId = userId
-                            self.firstName = firstName ?? ""
-                            self.lastName = lastName ?? ""
-                            backupyourdetails()
-                            //self.userId = ""
-                            //self.firstName = ""
-                            //self.lastName = ""
-                            //self.email = ""
-                            //userAuth.email = ""
-                            //userAuth.login()
-                            break
-                        default:
-                            exit(0)
-                        }
-                    case .failure( _):
-                        break
+                List {
+                    ForEach(videos) {
+                        $0.
                     }
                 }
-                    
-                }
-                .frame(height: 50)
-                .padding()
-                .cornerRadius(8)
-                .signInWithAppleButtonStyle(colorScheme == .dark ? .white : .black)
-                Spacer(minLength: 1)*/
                 VStack{
                     //Button(action: {
                     NavigationLink(destination: CourseView(studentController: studentController, sessionController: sessionController, pwdController: pwdController, userId: userId, email: email, storeKit: storeKit) ){
