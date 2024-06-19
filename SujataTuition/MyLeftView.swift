@@ -159,59 +159,6 @@ struct MyLeftView: View{
                     .border(Color.red)
                     .cornerRadius(20)
                 }
-                Spacer(minLength: 1)
-                VStack{
-                    Text("Enter your information")
-                        .frame(width: 200, height:50, alignment: .center)
-                        .foregroundColor(.red)
-                    Spacer(minLength: 5)
-                    HStack{
-                        Text("Your Name       ")
-                        //Spacer(minLength: 5)
-                        TextField("Your name", text: $name)
-                            .frame(width:  200, height: 30, alignment: .leading)
-                            .foregroundColor(.red)
-                            .background(.white)
-                            .border(Color.gray)
-                    }
-                    //.cornerRadius(5)
-                    Spacer(minLength: 1)
-                    HStack{
-                        Text("E-mail address  ")
-                        //Spacer(minLength: 5)
-                        TextField("E-mail", text: $mail)
-                            .frame(width: 200, height: 30, alignment: .leading)
-                            .foregroundColor(.red)
-                            .background(.white)
-                            .border(Color.gray)
-                    }    //.cornerRadius(5)
-                    Spacer(minLength: 10)
-                    HStack{
-                        Text("State           ")
-                        //Spacer(minLength: 5)
-                        TextField("State", text: $state)
-                            .frame(width: 200, height: 30, alignment: .leading)
-                            .foregroundColor(.red)
-                            .background(.white)
-                            .border(Color.gray)
-                    }    //.cornerRadius(5)
-                    Spacer(minLength: 10)
-                    HStack{
-                        Text("Country         ")
-                        //Spacer(minLength: 5)
-                        TextField("Country", text: $country)
-                            .frame(width: 200, height: 30, alignment: .leading)
-                            .foregroundColor(.red)
-                            .background(.white)
-                            .border(Color.gray)
-                    }
-                    Spacer(minLength: 10)    //.cornerRadius(5)
-                }
-                .frame(width: 700, height: 300)
-                .foregroundColor(.gray)
-                .border(Color.gray)
-                .background(.white)
-                .cornerRadius(20)
                 
                 Spacer(minLength: 5)
                 HStack{
