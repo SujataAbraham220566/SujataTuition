@@ -7,47 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		40080FBC2C01CBCD00E97C04 /* PropertyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40080FBB2C01CBCD00E97C04 /* PropertyList.plist */; };
 		40080FBF2C01CDF800E97C04 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40080FBE2C01CDF700E97C04 /* StoreKit.framework */; };
 		40080FC12C01DA8E00E97C04 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40080FC02C01DA8E00E97C04 /* StoreKitManager.swift */; };
-		40080FC52C032BD000E97C04 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40080FC42C032BD000E97C04 /* CourseView.swift */; };
-		402BEF542B9B067800907954 /* KeychainItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BEF532B9B067800907954 /* KeychainItem.swift */; };
-		402BEF582B9B098600907954 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402BEF572B9B098600907954 /* ResultViewController.swift */; };
+		40080FC52C032BD000E97C04 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40080FC42C032BD000E97C04 /* CoursesView.swift */; };
 		404A762F2C238DE1001789D4 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 404A762D2C238DE1001789D4 /* DataModel.xcdatamodeld */; };
-		405E15A42C19110000F2E840 /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 405E15A32C19110000F2E840 /* VideoManager.swift */; };
-		40923DAF2B9E0D5200D55B0D /* UserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40923DAE2B9E0D5200D55B0D /* UserAuth.swift */; };
-		40A657E02C1658C3002C27D0 /* Maths6Chapter1.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 40D4AE7F2BD6F26F00BDEAEB /* Maths6Chapter1.m4v */; };
-		40BF50F72C1C7FEA00E29C0B /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF50F62C1C7FEA00E29C0B /* VideoController.swift */; };
-		40BF51052C1C93E500E29C0B /* VideoFiles+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF51042C1C93E500E29C0B /* VideoFiles+CoreDataClass.swift */; };
-		40BF51072C1C944000E29C0B /* VideoFiles+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40BF51062C1C944000E29C0B /* VideoFiles+CoreDataProperties.swift */; };
 		40CA0B3C2B93675200DB5429 /* SujataTuitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B3B2B93675200DB5429 /* SujataTuitionApp.swift */; };
-		40CA0B3E2B93675200DB5429 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B3D2B93675200DB5429 /* ContentView.swift */; };
 		40CA0B402B93675300DB5429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CA0B3F2B93675300DB5429 /* Assets.xcassets */; };
 		40CA0B432B93675300DB5429 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CA0B422B93675300DB5429 /* Preview Assets.xcassets */; };
 		40CA0B452B93675300DB5429 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B442B93675300DB5429 /* Persistence.swift */; };
-		40CA0B482B93675300DB5429 /* SujataTuition.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B462B93675300DB5429 /* SujataTuition.xcdatamodeld */; };
 		40CA0B542B93675300DB5429 /* SujataTuitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B532B93675300DB5429 /* SujataTuitionTests.swift */; };
 		40CA0B5E2B93675300DB5429 /* SujataTuitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B5D2B93675300DB5429 /* SujataTuitionUITests.swift */; };
 		40CA0B602B93675300DB5429 /* SujataTuitionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B5F2B93675300DB5429 /* SujataTuitionUITestsLaunchTests.swift */; };
-		40CA0B6E2B936C1000DB5429 /* TuitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B6D2B936C1000DB5429 /* TuitionView.swift */; };
-		40CA0B712B936C9B00DB5429 /* StudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B702B936C9B00DB5429 /* StudentView.swift */; };
-		40CA0B732B936CF100DB5429 /* SessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B722B936CF100DB5429 /* SessionView.swift */; };
-		40CA0B752B936D6200DB5429 /* AddStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B742B936D6200DB5429 /* AddStudentView.swift */; };
-		40CA0B772B936DCC00DB5429 /* EditStudentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B762B936DCC00DB5429 /* EditStudentView.swift */; };
-		40CA0B792B936E1B00DB5429 /* AddSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B782B936E1B00DB5429 /* AddSessionView.swift */; };
-		40CA0B7B2B936E7200DB5429 /* EditSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B7A2B936E7200DB5429 /* EditSessionView.swift */; };
-		40CA0B7E2B936EEF00DB5429 /* SessionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B7D2B936EEF00DB5429 /* SessionController.swift */; };
-		40CA0B802B936F5100DB5429 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B7F2B936F5100DB5429 /* StudentController.swift */; };
-		40CA0B822B936FA700DB5429 /* PwdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B812B936FA700DB5429 /* PwdController.swift */; };
-		40CA0B842B93700600DB5429 /* Sessions+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B832B93700600DB5429 /* Sessions+CoreDataClass.swift */; };
-		40CA0B892B9370EC00DB5429 /* PwdFile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B882B9370EC00DB5429 /* PwdFile+CoreDataClass.swift */; };
-		40CA0B8B2B93714900DB5429 /* PwdFile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B8A2B93714900DB5429 /* PwdFile+CoreDataProperties.swift */; };
-		40CA0B8D2B9371A200DB5429 /* Sessions+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B8C2B9371A200DB5429 /* Sessions+CoreDataProperties.swift */; };
-		40CA0B942B93740400DB5429 /* CheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B932B93740400DB5429 /* CheckOutViewController.swift */; };
-		40CA0B962B93745700DB5429 /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B952B93745700DB5429 /* SUImagePickerView.swift */; };
-		40CA0B982B9374B000DB5429 /* EmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B972B9374B000DB5429 /* EmailController.swift */; };
-		40CA0B9E2B93777700DB5429 /* MyLeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B9D2B93777700DB5429 /* MyLeftView.swift */; };
-		40CA0BA22B93782700DB5429 /* SignInWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0BA12B93782700DB5429 /* SignInWithApple.swift */; };
+		40CA0B6E2B936C1000DB5429 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B6D2B936C1000DB5429 /* CourseView.swift */; };
+		40CA0B842B93700600DB5429 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B832B93700600DB5429 /* Model.swift */; };
+		40CA0B9E2B93777700DB5429 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B9D2B93777700DB5429 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,27 +41,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		40080FBA2C01C7E700E97C04 /* Product.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Product.storekit; path = "SujataTuition/New Group/Product.storekit"; sourceTree = SOURCE_ROOT; };
-		40080FBB2C01CBCD00E97C04 /* PropertyList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PropertyList.plist; sourceTree = "<group>"; };
+		40080FBA2C01C7E700E97C04 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Products.storekit; path = SujataTuition/Products.storekit; sourceTree = SOURCE_ROOT; };
 		40080FBE2C01CDF700E97C04 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		40080FC02C01DA8E00E97C04 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
-		40080FC42C032BD000E97C04 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
-		40080FC62C06264A00E97C04 /* Maths6Chapter1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maths6Chapter1.m4v; sourceTree = "<group>"; };
-		402BEF532B9B067800907954 /* KeychainItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainItem.swift; sourceTree = "<group>"; };
-		402BEF572B9B098600907954 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		40080FC42C032BD000E97C04 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
 		404A762E2C238DE1001789D4 /* SujataTuition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SujataTuition.xcdatamodel; sourceTree = "<group>"; };
-		405E15A32C19110000F2E840 /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
-		40923DAE2B9E0D5200D55B0D /* UserAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAuth.swift; sourceTree = "<group>"; };
-		40BF50F62C1C7FEA00E29C0B /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
-		40BF51042C1C93E500E29C0B /* VideoFiles+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoFiles+CoreDataClass.swift"; sourceTree = "<group>"; };
-		40BF51062C1C944000E29C0B /* VideoFiles+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VideoFiles+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		40CA0B382B93675200DB5429 /* SujataTuition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SujataTuition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CA0B3B2B93675200DB5429 /* SujataTuitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionApp.swift; sourceTree = "<group>"; };
-		40CA0B3D2B93675200DB5429 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		40CA0B3F2B93675300DB5429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40CA0B422B93675300DB5429 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		40CA0B442B93675300DB5429 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		40CA0B472B93675300DB5429 /* SujataTuition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SujataTuition.xcdatamodel; sourceTree = "<group>"; };
 		40CA0B492B93675300DB5429 /* SujataTuition.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SujataTuition.entitlements; sourceTree = "<group>"; };
 		40CA0B4A2B93675300DB5429 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40CA0B4F2B93675300DB5429 /* SujataTuitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SujataTuitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,26 +58,9 @@
 		40CA0B592B93675300DB5429 /* SujataTuitionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SujataTuitionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CA0B5D2B93675300DB5429 /* SujataTuitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionUITests.swift; sourceTree = "<group>"; };
 		40CA0B5F2B93675300DB5429 /* SujataTuitionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		40CA0B6D2B936C1000DB5429 /* TuitionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuitionView.swift; sourceTree = "<group>"; };
-		40CA0B702B936C9B00DB5429 /* StudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentView.swift; sourceTree = "<group>"; };
-		40CA0B722B936CF100DB5429 /* SessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionView.swift; sourceTree = "<group>"; };
-		40CA0B742B936D6200DB5429 /* AddStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStudentView.swift; sourceTree = "<group>"; };
-		40CA0B762B936DCC00DB5429 /* EditStudentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditStudentView.swift; sourceTree = "<group>"; };
-		40CA0B782B936E1B00DB5429 /* AddSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSessionView.swift; sourceTree = "<group>"; };
-		40CA0B7A2B936E7200DB5429 /* EditSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSessionView.swift; sourceTree = "<group>"; };
-		40CA0B7D2B936EEF00DB5429 /* SessionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionController.swift; sourceTree = "<group>"; };
-		40CA0B7F2B936F5100DB5429 /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
-		40CA0B812B936FA700DB5429 /* PwdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwdController.swift; sourceTree = "<group>"; };
-		40CA0B832B93700600DB5429 /* Sessions+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sessions+CoreDataClass.swift"; sourceTree = "<group>"; };
-		40CA0B882B9370EC00DB5429 /* PwdFile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PwdFile+CoreDataClass.swift"; sourceTree = "<group>"; };
-		40CA0B8A2B93714900DB5429 /* PwdFile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PwdFile+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		40CA0B8C2B9371A200DB5429 /* Sessions+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sessions+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		40CA0B932B93740400DB5429 /* CheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutViewController.swift; sourceTree = "<group>"; };
-		40CA0B952B93745700DB5429 /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
-		40CA0B972B9374B000DB5429 /* EmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailController.swift; sourceTree = "<group>"; };
-		40CA0B9D2B93777700DB5429 /* MyLeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLeftView.swift; sourceTree = "<group>"; };
-		40CA0BA12B93782700DB5429 /* SignInWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithApple.swift; sourceTree = "<group>"; };
-		40D4AE7F2BD6F26F00BDEAEB /* Maths6Chapter1.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = Maths6Chapter1.m4v; sourceTree = "<group>"; };
+		40CA0B6D2B936C1000DB5429 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		40CA0B832B93700600DB5429 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		40CA0B9D2B93777700DB5429 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,24 +123,16 @@
 			children = (
 				40CA0B3B2B93675200DB5429 /* SujataTuitionApp.swift */,
 				40CA0B442B93675300DB5429 /* Persistence.swift */,
-				40CA0B3D2B93675200DB5429 /* ContentView.swift */,
-				40CA0B9D2B93777700DB5429 /* MyLeftView.swift */,
-				40080FC42C032BD000E97C04 /* CourseView.swift */,
+				40CA0B9D2B93777700DB5429 /* HomeView.swift */,
+				40080FC42C032BD000E97C04 /* CoursesView.swift */,
+				40CA0B6D2B936C1000DB5429 /* CourseView.swift */,
 				40080FC02C01DA8E00E97C04 /* StoreKitManager.swift */,
-				405E15A32C19110000F2E840 /* VideoManager.swift */,
-				40CA0BA12B93782700DB5429 /* SignInWithApple.swift */,
-				402BEF532B9B067800907954 /* KeychainItem.swift */,
-				40923DAE2B9E0D5200D55B0D /* UserAuth.swift */,
-				40080FC62C06264A00E97C04 /* Maths6Chapter1.m4v */,
-				402BEF572B9B098600907954 /* ResultViewController.swift */,
-				40CA0B922B9373EA00DB5429 /* New Group */,
-				40CA0B7C2B936ECC00DB5429 /* DataModelGroup */,
-				40CA0B6F2B936C7300DB5429 /* Master */,
-				40CA0B6C2B936BDE00DB5429 /* Tuition */,
+				40080FBA2C01C7E700E97C04 /* Products.storekit */,
+				404A762D2C238DE1001789D4 /* DataModel.xcdatamodeld */,
+				40CA0B832B93700600DB5429 /* Model.swift */,
 				40CA0B3F2B93675300DB5429 /* Assets.xcassets */,
 				40CA0B492B93675300DB5429 /* SujataTuition.entitlements */,
 				40CA0B4A2B93675300DB5429 /* Info.plist */,
-				40CA0B462B93675300DB5429 /* SujataTuition.xcdatamodeld */,
 				40CA0B412B93675300DB5429 /* Preview Content */,
 			);
 			path = SujataTuition;
@@ -224,58 +161,6 @@
 				40CA0B5F2B93675300DB5429 /* SujataTuitionUITestsLaunchTests.swift */,
 			);
 			path = SujataTuitionUITests;
-			sourceTree = "<group>";
-		};
-		40CA0B6C2B936BDE00DB5429 /* Tuition */ = {
-			isa = PBXGroup;
-			children = (
-				40D4AE7F2BD6F26F00BDEAEB /* Maths6Chapter1.m4v */,
-				40CA0B6D2B936C1000DB5429 /* TuitionView.swift */,
-			);
-			path = Tuition;
-			sourceTree = "<group>";
-		};
-		40CA0B6F2B936C7300DB5429 /* Master */ = {
-			isa = PBXGroup;
-			children = (
-				40CA0B702B936C9B00DB5429 /* StudentView.swift */,
-				40CA0B722B936CF100DB5429 /* SessionView.swift */,
-				40CA0B742B936D6200DB5429 /* AddStudentView.swift */,
-				40CA0B762B936DCC00DB5429 /* EditStudentView.swift */,
-				40CA0B782B936E1B00DB5429 /* AddSessionView.swift */,
-				40CA0B7A2B936E7200DB5429 /* EditSessionView.swift */,
-			);
-			path = Master;
-			sourceTree = "<group>";
-		};
-		40CA0B7C2B936ECC00DB5429 /* DataModelGroup */ = {
-			isa = PBXGroup;
-			children = (
-				40080FBA2C01C7E700E97C04 /* Product.storekit */,
-				40080FBB2C01CBCD00E97C04 /* PropertyList.plist */,
-				404A762D2C238DE1001789D4 /* DataModel.xcdatamodeld */,
-				40CA0B7D2B936EEF00DB5429 /* SessionController.swift */,
-				40BF50F62C1C7FEA00E29C0B /* VideoController.swift */,
-				40CA0B7F2B936F5100DB5429 /* StudentController.swift */,
-				40CA0B812B936FA700DB5429 /* PwdController.swift */,
-				40CA0B832B93700600DB5429 /* Sessions+CoreDataClass.swift */,
-				40BF51042C1C93E500E29C0B /* VideoFiles+CoreDataClass.swift */,
-				40CA0B882B9370EC00DB5429 /* PwdFile+CoreDataClass.swift */,
-				40CA0B8A2B93714900DB5429 /* PwdFile+CoreDataProperties.swift */,
-				40CA0B8C2B9371A200DB5429 /* Sessions+CoreDataProperties.swift */,
-				40BF51062C1C944000E29C0B /* VideoFiles+CoreDataProperties.swift */,
-			);
-			path = DataModelGroup;
-			sourceTree = "<group>";
-		};
-		40CA0B922B9373EA00DB5429 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				40CA0B932B93740400DB5429 /* CheckOutViewController.swift */,
-				40CA0B952B93745700DB5429 /* SUImagePickerView.swift */,
-				40CA0B972B9374B000DB5429 /* EmailController.swift */,
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,9 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40080FBC2C01CBCD00E97C04 /* PropertyList.plist in Resources */,
 				40CA0B432B93675300DB5429 /* Preview Assets.xcassets in Resources */,
-				40A657E02C1658C3002C27D0 /* Maths6Chapter1.m4v in Resources */,
 				40CA0B402B93675300DB5429 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,39 +293,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40CA0B942B93740400DB5429 /* CheckOutViewController.swift in Sources */,
-				40BF50F72C1C7FEA00E29C0B /* VideoController.swift in Sources */,
-				40923DAF2B9E0D5200D55B0D /* UserAuth.swift in Sources */,
-				40CA0B732B936CF100DB5429 /* SessionView.swift in Sources */,
 				40CA0B452B93675300DB5429 /* Persistence.swift in Sources */,
-				40CA0B752B936D6200DB5429 /* AddStudentView.swift in Sources */,
-				40CA0BA22B93782700DB5429 /* SignInWithApple.swift in Sources */,
-				40CA0B792B936E1B00DB5429 /* AddSessionView.swift in Sources */,
-				40CA0B7B2B936E7200DB5429 /* EditSessionView.swift in Sources */,
-				40CA0B802B936F5100DB5429 /* StudentController.swift in Sources */,
-				40CA0B9E2B93777700DB5429 /* MyLeftView.swift in Sources */,
-				40CA0B3E2B93675200DB5429 /* ContentView.swift in Sources */,
-				40CA0B482B93675300DB5429 /* SujataTuition.xcdatamodeld in Sources */,
-				40BF51072C1C944000E29C0B /* VideoFiles+CoreDataProperties.swift in Sources */,
-				40CA0B6E2B936C1000DB5429 /* TuitionView.swift in Sources */,
-				40CA0B772B936DCC00DB5429 /* EditStudentView.swift in Sources */,
-				40CA0B962B93745700DB5429 /* SUImagePickerView.swift in Sources */,
+				40CA0B9E2B93777700DB5429 /* HomeView.swift in Sources */,
+				40CA0B6E2B936C1000DB5429 /* CourseView.swift in Sources */,
 				40080FC12C01DA8E00E97C04 /* StoreKitManager.swift in Sources */,
-				40080FC52C032BD000E97C04 /* CourseView.swift in Sources */,
-				40CA0B712B936C9B00DB5429 /* StudentView.swift in Sources */,
-				40CA0B822B936FA700DB5429 /* PwdController.swift in Sources */,
-				402BEF542B9B067800907954 /* KeychainItem.swift in Sources */,
-				40CA0B7E2B936EEF00DB5429 /* SessionController.swift in Sources */,
-				40CA0B842B93700600DB5429 /* Sessions+CoreDataClass.swift in Sources */,
-				40CA0B8D2B9371A200DB5429 /* Sessions+CoreDataProperties.swift in Sources */,
+				40080FC52C032BD000E97C04 /* CoursesView.swift in Sources */,
+				40CA0B842B93700600DB5429 /* Model.swift in Sources */,
 				40CA0B3C2B93675200DB5429 /* SujataTuitionApp.swift in Sources */,
-				40CA0B982B9374B000DB5429 /* EmailController.swift in Sources */,
-				40CA0B8B2B93714900DB5429 /* PwdFile+CoreDataProperties.swift in Sources */,
-				40BF51052C1C93E500E29C0B /* VideoFiles+CoreDataClass.swift in Sources */,
-				402BEF582B9B098600907954 /* ResultViewController.swift in Sources */,
 				404A762F2C238DE1001789D4 /* DataModel.xcdatamodeld in Sources */,
-				40CA0B892B9370EC00DB5429 /* PwdFile+CoreDataClass.swift in Sources */,
-				405E15A42C19110000F2E840 /* VideoManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -624,7 +482,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.2;
-				PRODUCT_BUNDLE_IDENTIFIER = Sujata.SujataTuition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sujata.SujataTuition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -659,7 +517,7 @@
 				);
 				MARKETING_VERSION = 0.2;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = Sujata.SujataTuition;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Sujata.SujataTuition;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -791,18 +649,7 @@
 				404A762E2C238DE1001789D4 /* SujataTuition.xcdatamodel */,
 			);
 			currentVersion = 404A762E2C238DE1001789D4 /* SujataTuition.xcdatamodel */;
-			name = DataModel.xcdatamodeld;
-			path = /Users/sujataabraham/Documents/OC/SujataTuition/SujataTuition/DataModelGroup/DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		40CA0B462B93675300DB5429 /* SujataTuition.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				40CA0B472B93675300DB5429 /* SujataTuition.xcdatamodel */,
-			);
-			currentVersion = 40CA0B472B93675300DB5429 /* SujataTuition.xcdatamodel */;
-			path = SujataTuition.xcdatamodeld;
+			path = DataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

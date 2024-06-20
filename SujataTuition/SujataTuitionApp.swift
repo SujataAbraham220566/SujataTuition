@@ -9,52 +9,14 @@ import SwiftUI
 import UIKit
 import AVKit
 
-//@available(iOS 17.0, *)
 @main
 struct SujataTuitionApp: App {
-    /*init() {
-        var testplayer: AVPlayer
-    }*/
-    
-    //public override required init() {
-        //FirebaseApp.configure()
-    //}
-
-    //let persistenceController = PersistenceController.shared
     @Environment(\.scenePhase) var scenePhase
-    @StateObject private var studentController = StudentController()
-    @StateObject private var sessionController = SessionController()
-    @StateObject private var pwdController = PwdController()
-    @StateObject private var videoController = VideoController()
-    //@StateObject private var userAuth = UserAuth()
-    //@State private var email = ""
-    //@UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
-
-    //@State var path: String = "one"
-    //@available(iOS 17.0, *)
+    
     var body: some Scene{
-        //FirebaseApp.configure()
-        WindowGroup{
-            //FirebaseApp.configure()
-            //Circle()
-            ContentView(studentController: studentController, sessionController: sessionController, pwdController: pwdController, videoController: videoController)
-            //.environment(\.managedObjectContext, itemController.container.viewContext)
-                .environmentObject(studentController)
-                .environmentObject(sessionController)
-                .environmentObject(pwdController)
-                .environmentObject(videoController)
-                .environmentObject(UserAuth())
+        WindowGroup {
+            HomeView()
         }
-        /*.onChange(of: scenePhase){ [self] _ in
-            //FireBaseApp.configure()
-            studentController.save(context: studentController.container.viewContext)
-            sessionController.save(context: sessionController.container.viewContext)
-            pwdController.save(context: pwdController.container.viewContext)
-        }*/
-        
-        
-        
     }
 }
 

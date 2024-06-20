@@ -8,7 +8,3 @@
 import Foundation
 import CoreData
 
-@objc(Sessions)
-public class Sessions: NSManagedObject {
-
-}
