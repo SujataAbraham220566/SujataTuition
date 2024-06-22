@@ -85,20 +85,20 @@ struct HomeView: View {
                 Spacer(minLength: 1)
                 
                 VStack {
-                    NavigationLink(destination: EnrollView(moc: moc)) {
-                        Text ("ENROLL")
+                    NavigationLink(destination: CoursesView(moc: moc)) {
+                        Text("ENROLL")
                     }
                 }
                 .foregroundColor(.red)
                 .font(.title)
                 
-                Spacer(minLength: 1)
-                
-                NavigationLink(destination: TuitionView()) {
-                    Text("VIEW")
-                }
-                .foregroundColor(.red)
-                .font(.title)
+//                Spacer(minLength: 1)
+//                
+//                NavigationLink(destination: TuitionView()) {
+//                    Text("VIEW")
+//                }
+//                .foregroundColor(.red)
+//                .font(.title)
                 
                 Spacer(minLength: 30)
             }

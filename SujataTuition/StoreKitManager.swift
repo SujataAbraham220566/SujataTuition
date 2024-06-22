@@ -35,7 +35,18 @@ class StoreKitManager: ObservableObject {
    
     @Published var productsById: [String: Product]?
     @Published var purchasedProducts: Set<Product>?
-   
+//        didSet {
+//            purchasedCourses = if let purchasedProducts {
+//                purchasedProducts.map {
+//                }
+//            } else {
+//                nil
+//            }
+//        }
+//    }
+    
+    @Published var purchasedCourses: [Course]?
+    
     private func updatePurchasedProducts() async {
         var purchasedProducts = Set<Product>()
         

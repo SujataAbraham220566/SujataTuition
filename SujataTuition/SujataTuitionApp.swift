@@ -13,9 +13,11 @@ import AVKit
 struct SujataTuitionApp: App {
     @Environment(\.scenePhase) var scenePhase
     
+    let persistence = PersistenceController.shared
+    
     var body: some Scene{
         WindowGroup {
-            HomeView()
+            HomeView(moc: persistence.container.viewContext)
         }
     }
 }

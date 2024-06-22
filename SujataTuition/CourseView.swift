@@ -13,24 +13,24 @@ import CoreData
 
 struct CourseView: View {
     let moc: NSManagedObject
-    var chapters: [Video]?
-    
+    var chapters: [Chapter]
+   
     var body: some View {
-        if let chapters {
+//        if let chapters {
             List {
-                ForEach(chapters, id: \.self) { chapter in
-                    NavigationLink {
-                        VideoView(videoURL: chapter.videoUrl)
-                        
-                    } label: {
-                        Text(chapter.name)
-                    }
-                }
+//                ForEach(chapters, id: \.self) { chapter in
+//                    NavigationLink {
+//                        VideoView(videoURL: chapter.videoUrl)
+//                        
+//                    } label: {
+//                        Text(chapter.name)
+//                    }
+//                }
             }
             
-        } else {
-            Text("Loading...")
-        }
+//        } else {
+//            Text("Loading...")
+//        }
     }
 }
 

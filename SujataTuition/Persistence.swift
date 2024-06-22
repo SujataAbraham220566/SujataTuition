@@ -34,8 +34,6 @@ class PersistenceController {
         publicStoreDescription.configuration = "Public"
         container.persistentStoreDescriptions.append(publicStoreDescription)
         
-        try! container.initializeCloudKitSchema()
-        
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -52,6 +50,9 @@ class PersistenceController {
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
+        
+        try! container.initializeCloudKitSchema()
+        
         container.viewContext.automaticallyMergesChangesFromParent = true
     }
 }
