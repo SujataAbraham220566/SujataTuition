@@ -2,11 +2,10 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Chapter" representedClassName="Chapter" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" defaultValueString=""/>
-        <attribute name="videoID" optional="YES" attributeType="UUID" allowsExternalBinaryDataStorage="YES" usesScalarValueType="NO" spotlightIndexingEnabled="YES" storedInTruthFile="YES"/>
         <relationship name="course" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Course" inverseName="chapters" inverseEntity="Course"/>
     </entity>
     <entity name="Course" representedClassName="Course" syncable="YES" codeGenerationType="class">
-        <attribute name="name" attributeType="String" defaultValueString="Untitled"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
         <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Chapter" inverseName="course" inverseEntity="Chapter"/>
     </entity>
     <entity name="Progress" representedClassName="Progress" syncable="YES" codeGenerationType="class">

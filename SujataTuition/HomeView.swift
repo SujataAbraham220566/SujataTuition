@@ -85,7 +85,7 @@ struct HomeView: View {
                 Spacer(minLength: 1)
                 
                 VStack {
-                    NavigationLink(destination: CoursesView(moc: moc)) {
+                    NavigationLink(destination: CoursesView()) {
                         Text("ENROLL")
                     }
                 }
@@ -104,5 +104,6 @@ struct HomeView: View {
             }
             .background(.blue)
         }
+        .environment(\.managedObjectContext, PersistenceController.shared.container.viewContext)
     }
 }

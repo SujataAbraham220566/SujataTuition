@@ -12,57 +12,66 @@ import CoreData
 import StoreKit
 
 extension CoursesView.ItemViewModel: Identifiable {
-    public var id: String { course.name! }
+    public var id: String { product.displayName }
 }
 
 struct CoursesView: View {
     struct ItemViewModel {
-        let course: Course
+        let product: Product
         let isPurchased: Bool
     }
 
-    let moc: NSManagedObjectContext
-    @State var courses: [ItemViewModel]?
+    @StateObject var storeKitManager = StoreKitManager()
+    @State var items: [ItemViewModel]?
     
     var body: some View {
         Group {
-            if let courses {
+            if let items {
                 List {
-                    ForEach(courses) { item in
-                        HStack {
-                            Text(item.course.name!)
-                            
-                            Spacer()
-                            
-                            Button {
-                                Task {
-                                    //                            try await storeKit.purchase(product)
-                                }
+                    ForEach(items) { item in
+                        if item.isPurchased {
+                            NavigationLink {
+                                CourseView(id: item.product.id, name: item.product.displayName)
+                                
                             } label: {
-                                if item.isPurchased {
-                                    Text(Image(systemName: "checkmark"))
-                                        .bold()
-                                        .padding(10)
-                                } else {
-                                    Text(item.course.name!)
+                                Text(item.product.displayName)
+                            }
+
+                        } else {
+                            HStack {
+                                Text(item.product.displayName)
+                                Spacer()
+                                Button {
+                                    Task {
+                                        let _ = try await storeKitManager.purchase(item.product.id)
+                                    }
+                                } label: {
+                                    Text(item.product.displayPrice)
                                         .padding(10)
                                 }
                             }
                         }
                     }
                 }
-                .padding(5)
-                
+
             } else {
                 Text("Loading...")
             }
         }
-        .task {
-            courses = try? moc.fetch(Course.fetchRequest()).map {
-                ItemViewModel(course: $0, isPurchased: false)
-            }
+        .onChange(of: storeKitManager.productsById) {
+            update()
+        }
+        .onChange(of: storeKitManager.purchasedProducts) {
+            update()
         }
     }
+           
+    func update() {
+        items = storeKitManager.productsById?.values.map {
+            ItemViewModel(product: $0, isPurchased: storeKitManager.purchasedProducts?.contains($0) ?? false)
+        }
+    }
+
     
 //    struct ItemView: View {
 //        @ObservedObject var storeKit: StoreKitManager

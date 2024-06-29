@@ -7,16 +7,21 @@
 
 import Foundation
 import StoreKit
+import OSLog
+
+private let logger = Logger.init(subsystem: "SujataTuition", category: "StoreKitManager")
 
 class StoreKitManager: ObservableObject {
     private var updateTask: Task<Void, Error>? = nil
     
     init() {
-        Task {
+        Task { @MainActor in
             productsById = await {
                 let products = try! await Product.products(for: Self.productIds())
                 return Dictionary(grouping: products) { $0.id }.mapValues { $0.first! }
             }()
+            
+            await self.updatePurchasedProducts()
             
             updateTask = Task.detached { [weak self] in
                 for await verificationResult in Transaction.updates {
@@ -32,9 +37,9 @@ class StoreKitManager: ObservableObject {
         [ "com.SujataTuition.SixthChemistry",
           "com.SujataTuition.SixthMaths" ]
     }
-   
-    @Published var productsById: [String: Product]?
-    @Published var purchasedProducts: Set<Product>?
+  
+    @MainActor @Published var productsById: [String: Product]?
+    @MainActor @Published var purchasedProducts: Set<Product>?
 //        didSet {
 //            purchasedCourses = if let purchasedProducts {
 //                purchasedProducts.map {
@@ -44,9 +49,8 @@ class StoreKitManager: ObservableObject {
 //            }
 //        }
 //    }
-    
-    @Published var purchasedCourses: [Course]?
-    
+   
+    @MainActor
     private func updatePurchasedProducts() async {
         var purchasedProducts = Set<Product>()
         
@@ -64,6 +68,7 @@ class StoreKitManager: ObservableObject {
         updateTask?.cancel()
     }
     
+    @MainActor
     func purchase(_ productId: String) async throws -> Transaction? {
         guard let product = productsById![productId] else {
             throw NSError(domain: "bad productId", code: 0xDEAD)

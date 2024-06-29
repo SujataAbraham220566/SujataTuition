@@ -10,7 +10,7 @@
 		40080FBF2C01CDF800E97C04 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40080FBE2C01CDF700E97C04 /* StoreKit.framework */; };
 		40080FC12C01DA8E00E97C04 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40080FC02C01DA8E00E97C04 /* StoreKitManager.swift */; };
 		40080FC52C032BD000E97C04 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40080FC42C032BD000E97C04 /* CoursesView.swift */; };
-		404A762F2C238DE1001789D4 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 404A762D2C238DE1001789D4 /* DataModel.xcdatamodeld */; };
+		404A762F2C238DE1001789D4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 404A762D2C238DE1001789D4 /* Model.xcdatamodeld */; };
 		40CA0B3C2B93675200DB5429 /* SujataTuitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B3B2B93675200DB5429 /* SujataTuitionApp.swift */; };
 		40CA0B402B93675300DB5429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CA0B3F2B93675300DB5429 /* Assets.xcassets */; };
 		40CA0B432B93675300DB5429 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CA0B422B93675300DB5429 /* Preview Assets.xcassets */; };
@@ -128,7 +128,7 @@
 				40CA0B6D2B936C1000DB5429 /* CourseView.swift */,
 				40080FC02C01DA8E00E97C04 /* StoreKitManager.swift */,
 				40080FBA2C01C7E700E97C04 /* Products.storekit */,
-				404A762D2C238DE1001789D4 /* DataModel.xcdatamodeld */,
+				404A762D2C238DE1001789D4 /* Model.xcdatamodeld */,
 				40CA0B832B93700600DB5429 /* Model.swift */,
 				40CA0B3F2B93675300DB5429 /* Assets.xcassets */,
 				40CA0B492B93675300DB5429 /* SujataTuition.entitlements */,
@@ -300,7 +300,7 @@
 				40080FC52C032BD000E97C04 /* CoursesView.swift in Sources */,
 				40CA0B842B93700600DB5429 /* Model.swift in Sources */,
 				40CA0B3C2B93675200DB5429 /* SujataTuitionApp.swift in Sources */,
-				404A762F2C238DE1001789D4 /* DataModel.xcdatamodeld in Sources */,
+				404A762F2C238DE1001789D4 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,13 +643,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		404A762D2C238DE1001789D4 /* DataModel.xcdatamodeld */ = {
+		404A762D2C238DE1001789D4 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				404A762E2C238DE1001789D4 /* SujataTuition.xcdatamodel */,
 			);
 			currentVersion = 404A762E2C238DE1001789D4 /* SujataTuition.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
