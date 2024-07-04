@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import AVKit
 import AVFoundation
+import CloudKit
 import CoreData
 
 struct CourseView: View {
@@ -20,6 +21,7 @@ struct CourseView: View {
    
     var body: some View {
         Group {
+            let _ = print("courses: \(courses)")
             if let course = courses.first {
                 let chapters = course.chapters as? Set<Chapter> ?? []
                 
@@ -41,7 +43,7 @@ struct CourseView: View {
             }
         }
         .task {
-            courses.nsPredicate = .init(format: "id == '%@'", id)
+            courses.nsPredicate = .init(format: "id == %@", id)
         }
     }
 }
@@ -65,11 +67,14 @@ extension LoadingState {
 struct ChapterView: View {
     let name: String
 
-    @State var player = LoadingState<AVPlayer>.loading(0)
+    @State var state = LoadingState<AVPlayer>.loading(0) {
+        didSet {
+        }
+    }
 
     var body: some View {
         Group {
-            switch player {
+            switch state {
             case .error(let error):
                 Text("Error loading \(name): \(error)")
                 
@@ -83,10 +88,17 @@ struct ChapterView: View {
         .task {
             do {
                 for try await result in PersistenceController.shared.video(forChapterWithName: name) {
-                    player = result.map { AVPlayer(url: $0) }
+                    state = result.map { AVPlayer(url: $0) }
+                    if case .loaded(let player) = state {
+                        print("player.error: \(String(describing: player.error))")
+                        print("player.currentI: \(String(describing: player.currentItem))")
+                        print("player.error: \(String(describing: player.currentItem?.error))")
+                        print("player.error: \(String(describing: player.currentItem?.asset))")
+                    }
                 }
+
             } catch {
-                player = .error(error)
+                state = .error(error)
             }
         }
     }

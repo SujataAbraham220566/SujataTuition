@@ -51,70 +51,84 @@ class PersistenceController {
             }
         })
         
-        _ = container.persistentStoreCoordinator.persistentStores[1].options?["NSPersistentCloudKitContainerOptionsKey"]! as! NSPersistentCloudKitContainerOptions
-        let publicStore = container.persistentStoreCoordinator.persistentStores[1]
-        print("configurationName: \(String(describing: publicStore.configurationName))")
-        print("isReadOnly: \(String(describing: publicStore.isReadOnly))")
-
-        print("canModifyMOs: \(container.canModifyManagedObjects(in: container.persistentStoreCoordinator.persistentStores[1]))")
-        print("canModifyMOs: \(container.canModifyManagedObjects(in: container.persistentStoreCoordinator.persistentStores[0]))")
-        
+//        let privateStore = container.persistentStoreCoordinator.persistentStores[0]
+//        let publicStore = container.persistentStoreCoordinator.persistentStores[1]
+//        print("configurationName: \(String(describing: publicStore.configurationName))")
+//        print("isReadOnly: \(String(describing: publicStore.isReadOnly))")
+//
+//        print("canModifyMOs: \(container.canModifyManagedObjects(in: publicStore))")
+//        print("canModifyMOs: \(container.canModifyManagedObjects(in: container.persistentStoreCoordinator.persistentStores[0]))")
+//        
 //        try! container.initializeCloudKitSchema()
         
         logger.log("viewContext: \(self.container.viewContext)")
         container.viewContext.automaticallyMergesChangesFromParent = true
-        
-        let course = NSEntityDescription.insertNewObject(forEntityName: "Course", into: container.viewContext) as! Course
-        course.id = "course_boo2"
-        let chapter = NSEntityDescription.insertNewObject(forEntityName: "Chapter", into: container.viewContext) as! Chapter
-        chapter.name = "hi2"
-        course.chapters = [ chapter ]
-        do {
-            try container.viewContext.save()
-        } catch {
-            // Handle the error appropriately.
-            print("Failed to save the context:", error.localizedDescription)
-        }
+//        
+//        let course = NSEntityDescription.insertNewObject(forEntityName: "Course", into: container.viewContext) as! Course
+//        course.id = "com.SujataTuition.SixthChemistry"
+//        let chapter = NSEntityDescription.insertNewObject(forEntityName: "Chapter", into: container.viewContext) as! Chapter
+//        chapter.name = "hi2"
+//        course.chapters = [ chapter ]
+//        do {
+//            try container.viewContext.save()
+//        } catch {
+//            // Handle the error appropriately.
+//            print("Failed to save the context:", error.localizedDescription)
+//        }
     }
 
     func video(forChapterWithName name: String) -> AsyncThrowingStream<LoadingState<URL>, any Error> {
         AsyncThrowingStream { continuation in
-            Task {
+            Task.detached {
                 let publicDatabase = CKContainer.default().publicCloudDatabase
-                let query = CKQuery(recordType: "CD_Chapter",
-                                    predicate: .init(format: "name == '%@'", name))
-                let (results, _) = try await publicDatabase.records(matching: query, desiredKeys: [], resultsLimit: 1)
-                
-                guard let recordID = results.first?.0 else {
-                    continuation.finish(throwing: NSError(domain: "com.apple.SujataTuition.RecordNotFound", code: 0xDEAD))
-                    return
-                }
-                
-                let fetchRecordsOp = CKFetchRecordsOperation(recordIDs: [ recordID ])
-                fetchRecordsOp.desiredKeys = [ "video" ]
-                fetchRecordsOp.perRecordProgressBlock = { _, progress in
-                    continuation.yield(.loading(progress))
-                }
-                fetchRecordsOp.perRecordResultBlock = { _, result in
-                    if case .failure(let error) = result {
-                        continuation.finish(throwing: error)
+                let query = CKQuery(recordType: "CD_Chapter", predicate: .init(format: "CD_name == %@", name))
+                do {
+                    let (results, _) = try await publicDatabase.records(matching: query, desiredKeys: [], resultsLimit: 1)
+                    guard let recordID = results.first?.0 else {
+                        continuation.finish(throwing: NSError(domain: "com.apple.SujataTuition.RecordNotFound", code: 0xDEAD))
                         return
                     }
                     
-                    guard case .success(let record) = result, let asset = record["video"] as? CKAsset else {
-                        continuation.finish(throwing: NSError(domain: "com.apple.SujataTuition.NotAnAsset", code: 0xDEAD))
-                        return
+                    let fetchRecordsOp = CKFetchRecordsOperation(recordIDs: [ recordID ])
+                    fetchRecordsOp.desiredKeys = [ "CD_video_ckAsset" ]
+                    fetchRecordsOp.perRecordProgressBlock = { _, progress in
+                        continuation.yield(.loading(progress))
                     }
-                    
-                    guard let URL = asset.fileURL else {
-                        continuation.finish(throwing: NSError(domain: "com.apple.SujataTuition.NoAsset", code: 0xDEAD))
-                        return
+                    fetchRecordsOp.perRecordResultBlock = { _, result in
+                        if case .failure(let error) = result {
+                            continuation.finish(throwing: error)
+                            return
+                        }
+                        
+                        guard case .success(let record) = result, let asset = record["CD_video_ckAsset"] as? CKAsset else {
+                            continuation.finish(throwing: NSError(domain: "com.apple.SujataTuition.NotAnAsset", code: 0xDEAD))
+                            return
+                        }
+                        
+                        guard let URL = asset.fileURL else {
+                            continuation.finish(throwing: NSError(domain: "com.apple.SujataTuition.NoAsset", code: 0xDEAD))
+                            return
+                        }
+
+                        let directory = NSTemporaryDirectory()
+                        let fileName = "\(name).m4v"
+                        let destinationURL = NSURL.fileURL(withPathComponents: [directory, fileName])!
+
+                        if !FileManager.default.fileExists(atPath: destinationURL.absoluteString) {
+                            do {
+                                try FileManager.default.moveItem(at: URL, to: destinationURL)
+                            } catch {
+                                continuation.finish(throwing: error)
+                            }
+                        }
+
+                        continuation.yield(.loaded(destinationURL))
+                        continuation.finish()
                     }
-                    
-                    continuation.yield(.loaded(URL))
-                    continuation.finish()
+                    publicDatabase.add(fetchRecordsOp)
+                } catch {
+                    continuation.finish(throwing: error)
                 }
-                publicDatabase.add(fetchRecordsOp)
             }
         }
     }

@@ -79,7 +79,7 @@
          referenceType = "1">
       </LocationScenarioReference>
       <StoreKitConfigurationFileReference
-         identifier = "../../SujataTuition/New Group/Product.storekit">
+         identifier = "../../SujataTuition/Products.storekit">
       </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
