@@ -114,7 +114,7 @@ class PersistenceController {
                         let fileName = "\(name).m4v"
                         let destinationURL = NSURL.fileURL(withPathComponents: [directory, fileName])!
 
-                        if !FileManager.default.fileExists(atPath: destinationURL.absoluteString) {
+                        if !FileManager.default.fileExists(atPath: destinationURL.path()) {
                             do {
                                 try FileManager.default.moveItem(at: URL, to: destinationURL)
                             } catch {
