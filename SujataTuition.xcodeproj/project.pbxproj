@@ -10,7 +10,7 @@
 		40080FBF2C01CDF800E97C04 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40080FBE2C01CDF700E97C04 /* StoreKit.framework */; };
 		40080FC12C01DA8E00E97C04 /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40080FC02C01DA8E00E97C04 /* StoreKitManager.swift */; };
 		40080FC52C032BD000E97C04 /* CoursesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40080FC42C032BD000E97C04 /* CoursesView.swift */; };
-		404A762F2C238DE1001789D4 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 404A762D2C238DE1001789D4 /* Model.xcdatamodeld */; };
+		404A762F2C238DE1001789D4 /* Model4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 404A762D2C238DE1001789D4 /* Model4.xcdatamodeld */; };
 		40CA0B3C2B93675200DB5429 /* SujataTuitionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B3B2B93675200DB5429 /* SujataTuitionApp.swift */; };
 		40CA0B402B93675300DB5429 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CA0B3F2B93675300DB5429 /* Assets.xcassets */; };
 		40CA0B432B93675300DB5429 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40CA0B422B93675300DB5429 /* Preview Assets.xcassets */; };
@@ -19,7 +19,7 @@
 		40CA0B5E2B93675300DB5429 /* SujataTuitionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B5D2B93675300DB5429 /* SujataTuitionUITests.swift */; };
 		40CA0B602B93675300DB5429 /* SujataTuitionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B5F2B93675300DB5429 /* SujataTuitionUITestsLaunchTests.swift */; };
 		40CA0B6E2B936C1000DB5429 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B6D2B936C1000DB5429 /* CourseView.swift */; };
-		40CA0B842B93700600DB5429 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B832B93700600DB5429 /* Model.swift */; };
+		40CA0B842B93700600DB5429 /* Model4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B832B93700600DB5429 /* Model4.swift */; };
 		40CA0B9E2B93777700DB5429 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40CA0B9D2B93777700DB5429 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,7 @@
 		40080FBE2C01CDF700E97C04 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		40080FC02C01DA8E00E97C04 /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
 		40080FC42C032BD000E97C04 /* CoursesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesView.swift; sourceTree = "<group>"; };
-		404A762E2C238DE1001789D4 /* SujataTuition.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SujataTuition.xcdatamodel; sourceTree = "<group>"; };
+		404A762E2C238DE1001789D4 /* Model4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model4.xcdatamodel; sourceTree = "<group>"; };
 		40CA0B382B93675200DB5429 /* SujataTuition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SujataTuition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40CA0B3B2B93675200DB5429 /* SujataTuitionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionApp.swift; sourceTree = "<group>"; };
 		40CA0B3F2B93675300DB5429 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 		40CA0B5D2B93675300DB5429 /* SujataTuitionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionUITests.swift; sourceTree = "<group>"; };
 		40CA0B5F2B93675300DB5429 /* SujataTuitionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SujataTuitionUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		40CA0B6D2B936C1000DB5429 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
-		40CA0B832B93700600DB5429 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		40CA0B832B93700600DB5429 /* Model4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model4.swift; sourceTree = "<group>"; };
 		40CA0B9D2B93777700DB5429 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,8 +128,8 @@
 				40CA0B6D2B936C1000DB5429 /* CourseView.swift */,
 				40080FC02C01DA8E00E97C04 /* StoreKitManager.swift */,
 				40080FBA2C01C7E700E97C04 /* Products.storekit */,
-				404A762D2C238DE1001789D4 /* Model.xcdatamodeld */,
-				40CA0B832B93700600DB5429 /* Model.swift */,
+				404A762D2C238DE1001789D4 /* Model4.xcdatamodeld */,
+				40CA0B832B93700600DB5429 /* Model4.swift */,
 				40CA0B3F2B93675300DB5429 /* Assets.xcassets */,
 				40CA0B492B93675300DB5429 /* SujataTuition.entitlements */,
 				40CA0B4A2B93675300DB5429 /* Info.plist */,
@@ -227,7 +227,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1520;
-				LastUpgradeCheck = 1520;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					40CA0B372B93675200DB5429 = {
 						CreatedOnToolsVersion = 15.2;
@@ -298,9 +298,9 @@
 				40CA0B6E2B936C1000DB5429 /* CourseView.swift in Sources */,
 				40080FC12C01DA8E00E97C04 /* StoreKitManager.swift in Sources */,
 				40080FC52C032BD000E97C04 /* CoursesView.swift in Sources */,
-				40CA0B842B93700600DB5429 /* Model.swift in Sources */,
+				40CA0B842B93700600DB5429 /* Model4.swift in Sources */,
 				40CA0B3C2B93675200DB5429 /* SujataTuitionApp.swift in Sources */,
-				404A762F2C238DE1001789D4 /* Model.xcdatamodeld in Sources */,
+				404A762F2C238DE1001789D4 /* Model4.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +528,6 @@
 		40CA0B672B93675300DB5429 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -548,7 +547,6 @@
 		40CA0B682B93675300DB5429 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -568,7 +566,6 @@
 		40CA0B6A2B93675300DB5429 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MMNFG749N;
@@ -586,7 +583,6 @@
 		40CA0B6B2B93675300DB5429 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2MMNFG749N;
@@ -643,13 +639,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		404A762D2C238DE1001789D4 /* Model.xcdatamodeld */ = {
+		404A762D2C238DE1001789D4 /* Model4.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				404A762E2C238DE1001789D4 /* SujataTuition.xcdatamodel */,
+				404A762E2C238DE1001789D4 /* Model4.xcdatamodel */,
 			);
-			currentVersion = 404A762E2C238DE1001789D4 /* SujataTuition.xcdatamodel */;
-			path = Model.xcdatamodeld;
+			currentVersion = 404A762E2C238DE1001789D4 /* Model4.xcdatamodel */;
+			path = Model4.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

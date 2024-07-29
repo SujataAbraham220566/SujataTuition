@@ -34,8 +34,9 @@ class StoreKitManager: ObservableObject {
     
     // TODO: get this from the public CloudKit
     private static func productIds() async -> [String] {
-        [ "com.SujataTuition.SixthChemistry",
-          "com.SujataTuition.SixthMaths" ]
+        [ "com.SujataTuition.SixthMaths",
+          "com.SujataTuition.SixthPhysics",
+          "com.SujataTuition.SixthChemistry"]
     }
   
     @MainActor @Published var productsById: [String: Product]?

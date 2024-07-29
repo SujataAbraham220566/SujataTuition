@@ -2,12 +2,12 @@
   "identifier" : "D466DEF6",
   "nonRenewingSubscriptions" : [
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "350",
       "familyShareable" : false,
       "internalID" : "7CE71ACA",
       "localizations" : [
         {
-          "description" : "",
+          "description" : "6th Maths",
           "displayName" : "6th Maths",
           "locale" : "en_US"
         }
@@ -17,18 +17,33 @@
       "type" : "NonRenewingSubscription"
     },
     {
-      "displayPrice" : "0.99",
+      "displayPrice" : "250",
       "familyShareable" : false,
       "internalID" : "0A24AE3D",
       "localizations" : [
         {
-          "description" : "",
+          "description" : "6th Chemistry",
           "displayName" : "6th Chemistry",
           "locale" : "en_US"
         }
       ],
       "productID" : "com.SujataTuition.SixthChemistry",
       "referenceName" : "SixthChemistry",
+      "type" : "NonRenewingSubscription"
+    },
+    {
+      "displayPrice" : "350",
+      "familyShareable" : false,
+      "internalID" : "30C6A307",
+      "localizations" : [
+        {
+          "description" : "6th Physics",
+          "displayName" : "6th Physics",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "com.SujataTuition.SixthPhysics",
+      "referenceName" : "SixthPhysics",
       "type" : "NonRenewingSubscription"
     }
   ],

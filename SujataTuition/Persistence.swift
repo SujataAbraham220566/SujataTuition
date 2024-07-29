@@ -14,7 +14,7 @@ private let logger = Logger.init(subsystem: "SujataTuition", category: "Persiste
 class PersistenceController {
     static let shared = PersistenceController()
 
-    let container = NSPersistentCloudKitContainer(name: "Model")
+    let container = NSPersistentCloudKitContainer(name: "Model4")
 
     init() {
         // Private
@@ -90,7 +90,7 @@ class PersistenceController {
                     }
                     
                     let fetchRecordsOp = CKFetchRecordsOperation(recordIDs: [ recordID ])
-                    fetchRecordsOp.desiredKeys = [ "CD_video_ckAsset" ]
+                    fetchRecordsOp.desiredKeys = [ "video" ]
                     fetchRecordsOp.perRecordProgressBlock = { _, progress in
                         continuation.yield(.loading(progress))
                     }
@@ -100,7 +100,7 @@ class PersistenceController {
                             return
                         }
                         
-                        guard case .success(let record) = result, let asset = record["CD_video_ckAsset"] as? CKAsset else {
+                        guard case .success(let record) = result, let asset = record["video"] as? CKAsset else {
                             continuation.finish(throwing: NSError(domain: "com.apple.SujataTuition.NotAnAsset", code: 0xDEAD))
                             return
                         }
@@ -112,9 +112,10 @@ class PersistenceController {
 
                         let directory = NSTemporaryDirectory()
                         let fileName = "\(name).m4v"
+                        //let fileName = "\(video(forChapterWithName: name))"
                         let destinationURL = NSURL.fileURL(withPathComponents: [directory, fileName])!
 
-                        if !FileManager.default.fileExists(atPath: destinationURL.path()) {
+                        if !FileManager.default.fileExists(atPath: destinationURL.path(percentEncoded: false)) {
                             do {
                                 try FileManager.default.moveItem(at: URL, to: destinationURL)
                             } catch {
