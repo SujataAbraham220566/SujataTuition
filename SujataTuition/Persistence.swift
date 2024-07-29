@@ -80,6 +80,17 @@ class PersistenceController {
     func video(forChapterWithName name: String) -> AsyncThrowingStream<LoadingState<URL>, any Error> {
         AsyncThrowingStream { continuation in
             Task.detached {
+                let directory = NSTemporaryDirectory()
+                let fileName = "\(name).m4v"
+                //let fileName = "\(video(forChapterWithName: name))"
+                let destinationURL = NSURL.fileURL(withPathComponents: [directory, fileName])!
+
+                if FileManager.default.fileExists(atPath: destinationURL.path(percentEncoded: false)) {
+                    continuation.yield(.loaded(destinationURL))
+                    continuation.finish()
+                    return
+                }
+                
                 let publicDatabase = CKContainer.default().publicCloudDatabase
                 let query = CKQuery(recordType: "CD_Chapter", predicate: .init(format: "CD_name == %@", name))
                 do {
@@ -110,19 +121,12 @@ class PersistenceController {
                             return
                         }
 
-                        let directory = NSTemporaryDirectory()
-                        let fileName = "\(name).m4v"
-                        //let fileName = "\(video(forChapterWithName: name))"
-                        let destinationURL = NSURL.fileURL(withPathComponents: [directory, fileName])!
-
-                        if !FileManager.default.fileExists(atPath: destinationURL.path(percentEncoded: false)) {
-                            do {
-                                try FileManager.default.moveItem(at: URL, to: destinationURL)
-                            } catch {
-                                continuation.finish(throwing: error)
-                            }
+                        do {
+                            try FileManager.default.moveItem(at: URL, to: destinationURL)
+                        } catch {
+                            continuation.finish(throwing: error)
                         }
-
+                        
                         continuation.yield(.loaded(destinationURL))
                         continuation.finish()
                     }
