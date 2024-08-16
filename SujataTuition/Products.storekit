@@ -2,7 +2,7 @@
   "identifier" : "D466DEF6",
   "nonRenewingSubscriptions" : [
     {
-      "displayPrice" : "350",
+      "displayPrice" : "250",
       "familyShareable" : false,
       "internalID" : "7CE71ACA",
       "localizations" : [
@@ -17,7 +17,7 @@
       "type" : "NonRenewingSubscription"
     },
     {
-      "displayPrice" : "250",
+      "displayPrice" : "150",
       "familyShareable" : false,
       "internalID" : "0A24AE3D",
       "localizations" : [
@@ -32,7 +32,7 @@
       "type" : "NonRenewingSubscription"
     },
     {
-      "displayPrice" : "350",
+      "displayPrice" : "250",
       "familyShareable" : false,
       "internalID" : "30C6A307",
       "localizations" : [
@@ -49,7 +49,7 @@
   ],
   "products" : [
     {
-      "displayPrice" : "350",
+      "displayPrice" : "250",
       "familyShareable" : false,
       "internalID" : "FDA26762",
       "localizations" : [
@@ -64,7 +64,7 @@
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "350",
+      "displayPrice" : "250",
       "familyShareable" : false,
       "internalID" : "021BDA47",
       "localizations" : [
@@ -79,7 +79,7 @@
       "type" : "Consumable"
     },
     {
-      "displayPrice" : "250",
+      "displayPrice" : "150",
       "familyShareable" : false,
       "internalID" : "7C6C0F1D",
       "localizations" : [

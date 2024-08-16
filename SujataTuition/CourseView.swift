@@ -18,11 +18,15 @@ struct CourseView: View {
     
     @FetchRequest(sortDescriptors: [])
     private var courses: FetchedResults<Course>
-   
+    @FetchRequest(sortDescriptors: [])
+    private var chapters: FetchedResults<Chapter>
+
     var body: some View {
         Group {
-//            let _ = print("courses: \(courses)")
-//            let _ = print("id: \(id) course: \(String(describing: courses.first?.id))")
+            
+            let _ = print("courses: \(courses)")
+            let _ = print("chapters: \(chapters)")
+            let _ = print("id: \(id) course: \(String(describing: courses.first?.id))")
             if let course = courses.first {
                 let chapters = course.chapters as? Set<Chapter> ?? []
                 
