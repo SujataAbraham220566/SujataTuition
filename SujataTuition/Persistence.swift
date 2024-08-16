@@ -92,7 +92,7 @@ class PersistenceController {
                 }
                 
                 let publicDatabase = CKContainer.default().publicCloudDatabase
-                let query = CKQuery(recordType: "CD_Chapter", predicate: .init(format: "CD_name == %@", name))
+                let query = CKQuery(recordType: "Video", predicate: .init(format: "name == %@", name))
                 do {
                     let (results, _) = try await publicDatabase.records(matching: query, desiredKeys: [], resultsLimit: 1)
                     guard let recordID = results.first?.0 else {
@@ -101,7 +101,7 @@ class PersistenceController {
                     }
                     
                     let fetchRecordsOp = CKFetchRecordsOperation(recordIDs: [ recordID ])
-                    fetchRecordsOp.desiredKeys = [ "video" ]
+                    fetchRecordsOp.desiredKeys = [ "asset" ]
                     fetchRecordsOp.perRecordProgressBlock = { _, progress in
                         continuation.yield(.loading(progress))
                     }
@@ -111,7 +111,7 @@ class PersistenceController {
                             return
                         }
                         
-                        guard case .success(let record) = result, let asset = record["video"] as? CKAsset else {
+                        guard case .success(let record) = result, let asset = record["asset"] as? CKAsset else {
                             continuation.finish(throwing: NSError(domain: "com.apple.SujataTuition.NotAnAsset", code: 0xDEAD))
                             return
                         }
