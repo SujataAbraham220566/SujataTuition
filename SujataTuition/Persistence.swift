@@ -103,7 +103,10 @@ class PersistenceController {
                     let fetchRecordsOp = CKFetchRecordsOperation(recordIDs: [ recordID ])
                     fetchRecordsOp.desiredKeys = [ "asset" ]
                     fetchRecordsOp.perRecordProgressBlock = { _, progress in
-                        continuation.yield(.loading(progress))
+                        // 99.9% hack: if cancellation occurs before `perRecordResultBlock`, we could start another `fetchRecordsOp`
+                        if case .terminated = continuation.yield(.loading(progress)) {
+                            fetchRecordsOp.cancel()
+                        }
                     }
                     fetchRecordsOp.perRecordResultBlock = { _, result in
                         if case .failure(let error) = result {

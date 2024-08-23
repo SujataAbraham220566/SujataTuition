@@ -42,7 +42,7 @@
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.SujataTuition.SixthPhysics",
+      "productID" : "com.SujataTuition.SixthPhysics2",
       "referenceName" : "SixthPhysics",
       "type" : "NonRenewingSubscription"
     }
@@ -95,6 +95,10 @@
     }
   ],
   "settings" : {
+    "_askToBuyEnabled" : false,
+    "_compatibilityTimeRate" : {
+      "3" : 3
+    },
     "_failTransactionsEnabled" : false,
     "_locale" : "en_US",
     "_storefront" : "USA",
@@ -156,7 +160,8 @@
         "enabled" : false,
         "name" : "Offer Code Redeem Sheet"
       }
-    ]
+    ],
+    "_timeRate" : 10
   },
   "subscriptionGroups" : [
 

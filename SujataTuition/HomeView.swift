@@ -33,7 +33,7 @@ struct HomeView: View {
     @Environment(\.scenePhase) private var scenePhase
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 VStack{
                     Text("Sujata Classroom")

@@ -25,7 +25,8 @@ class StoreKitManager: ObservableObject {
             
             updateTask = Task.detached { [weak self] in
                 for await verificationResult in Transaction.updates {
-                    guard case .verified(_) = verificationResult else { continue }
+                    
+                    //guard case .verified(_) = verificationResult else { continue }
                     await self?.updatePurchasedProducts()
                 }
             }
@@ -35,7 +36,7 @@ class StoreKitManager: ObservableObject {
     // TODO: get this from the public CloudKit
     private static func productIds() async -> [String] {
         [ "com.SujataTuition.SixthMaths",
-          "com.SujataTuition.SixthPhysics",
+          "com.SujataTuition.SixthPhysics2",
           "com.SujataTuition.SixthChemistry"]
     }
   
